@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Spendthrift",
+  "name": "Budget Manager",
   "description": "This extension tracks your overall spendings.",
   "version": "1.0",
   "icons": {
