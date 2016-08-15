@@ -9,6 +9,9 @@
     "48": "icon48.png",
     "16": "icon16.png"
   },
+  "permissions": [
+          "storage"
+        ],
 
   "browser_action": {
     "default_icon": "icon16.png",
