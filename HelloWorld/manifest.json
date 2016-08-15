@@ -1,9 +1,14 @@
 {
   "manifest_version": 2,
 
-  "name": "Hello World",
+  "name": "Hello World Demo",
   "description": "This extension shows a Google Image search result for the current page",
   "version": "1.0",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
 
   "browser_action": {
     "default_icon": "icon16.png",
