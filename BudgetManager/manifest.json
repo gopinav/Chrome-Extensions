@@ -10,7 +10,8 @@
     "16": "icon16.png"
   },
   "permissions": [
-          "storage"
+          "storage",
+          "notifications"
         ],
 
   "browser_action": {
