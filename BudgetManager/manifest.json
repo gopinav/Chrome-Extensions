@@ -9,15 +9,21 @@
     "48": "icon48.png",
     "16": "icon16.png"
   },
-  "permissions": [
-          "storage",
-          "notifications"
-        ],
 
   "browser_action": {
     "default_icon": "icon16.png",
     "default_popup": "popup.html"
   },
+
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+          "storage",
+          "notifications"
+        ],
 
   "options_page": "options.html"
 }
