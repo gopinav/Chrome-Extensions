@@ -17,6 +17,18 @@
 
   "permissions": [  
           "tabs",      
-          "contextMenus"
-        ]
+          "contextMenus",
+          "ttsEngine"
+        ],
+
+  "tts_engine": {
+          "voices": [
+            {
+              "voice_name": "Alice",
+              "lang": "en-US",
+              "gender": "female",
+              "event_types": ["start", "marker", "end"]
+            }
+          ]
+        }
 }
