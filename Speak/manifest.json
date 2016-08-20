@@ -15,8 +15,7 @@
     "persistent": false
   },
 
-  "permissions": [  
-          "tabs",      
+  "permissions": [     
           "contextMenus",
           "tts"
         ]

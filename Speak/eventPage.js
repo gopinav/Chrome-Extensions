@@ -10,7 +10,7 @@ chrome.contextMenus.onClicked.addListener(function(clickData){
     if (clickData.menuItemId == "Speak" && clickData.selectionText){        
        chrome.tts.speak(clickData.selectionText,
                         {
-                            'rate': 0.8
+                            'rate': 0.7
                         });         
     }
 });
