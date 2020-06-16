@@ -16,14 +16,19 @@
   },
 
   "background": {
-    "scripts": ["eventPage.js"],
-    "persistent": false
+    "scripts": ["background.js"],
+    "persistent": true
   },
 
   "permissions": [
           "storage",
           "notifications",
-          "contextMenus"
+          "contextMenus",
+          "tabs",
+          "background",
+          "webRequest",
+          "webRequestBlocking",
+          "<all_urls>"
         ],
 
   "options_page": "options.html"
