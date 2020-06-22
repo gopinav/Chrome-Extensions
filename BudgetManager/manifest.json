@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Budget Manager",
-  "description": "This extension tracks your overall spendings.",
+  "name": "Neuralics",
+  "description": "Improves your focus and productivity.",
   "version": "1.0",
   "icons": {
     "128": "icon128.png",
