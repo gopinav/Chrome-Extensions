@@ -19,6 +19,11 @@ timer_button.addEventListener('click', (e) => {
         localStorage.setItem("timer_activated", true)
         is_activated.textContent = true;
         timer_button.value = "stop"
+        let now = new Date();
+        let n_sec = 10;
+        let delta = n_sec * 1000
+        let future_time = now.getTime() + delta
+        localStorage.setItem('end_block_time', future_time)
         
     } else if (timer_active == 'true') {
         // already running
@@ -29,3 +34,18 @@ timer_button.addEventListener('click', (e) => {
         console.log('something else')
     }
 });
+
+
+function deactivate() {
+    let deactivation_time = localStorage.getItem('end_block_time')
+    let current_date = new Date();
+    if (current_date > deactivation_time) {
+        console.log("DEACTIVATING")
+        is_activated.textContent = false;
+        timer_button.value = "start"
+        localStorage.setItem("timer_activated", false)
+    }
+    
+}
+
+window.setInterval(deactivate, 1000)
