@@ -29,7 +29,5 @@
           "webRequest",
           "webRequestBlocking",
           "<all_urls>"
-        ],
-
-  "options_page": "options.html"
+        ]
 }
