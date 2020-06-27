@@ -1,37 +1,43 @@
 const filter = {
     urls: [
-        '*://analytics.google.com/*',
-        '*://facebook.com/*',
-        '*://github.com/',
-        '*://github.com/notifications',
-        '*://news.ycombinator.com/*',
         '*://twitter.com/*',
+        '*://www.twitter.com/*',
+        '*://facebook.com/*',
         '*://www.facebook.com/*',
+        '*://reddit.com/*',
         '*://www.reddit.com/*',
-        '*://www.twitter.com/*'
+        '*://9gag.com/*',
+        '*://www.9gag.com/*',
+        '*://netflix.com/*',
+        '*://www.netflix.com/*',
+        '*://disneyplus.com/*',
+        '*://www.disneyplus.com/*',
+        '*://videoland.com/*',
+        '*://www.videoland.com/*',
+        '*://youtube.com/*',
+        '*://www.youtube.com/*',
+        '*://tiktok.com/*',
+        '*://www.tiktok.com/*',
+
     ],
 };
 
 const opt = ['blocking'];
 
-function blocker(details){
+function blocker(details) {
     let activated = localStorage.getItem("timer_activated");
 
-    if (activated == 'true'){
+    if (activated == 'true') {
         return {cancel: true};
     } else {
 
         return {cancel: false};
     }
-    
+
 }
 
 chrome.webRequest.onBeforeRequest.addListener(
-    blocker,
-    filter,
-    ["blocking"]);
-
-
+    blocker, filter, opt);
 
 // console.log("Loaded extension");
 
@@ -47,7 +53,6 @@ chrome.webRequest.onBeforeRequest.addListener(
 // }
 
 
-
 // function simple(){
 //     var initial = false;
 //     initial = get_param()
@@ -55,11 +60,11 @@ chrome.webRequest.onBeforeRequest.addListener(
 //         initial = "hello world";
 //         // initial = timer.is_running;
 //     });
-    
+
 //     // alert(isTrueSet)
 //     if (initial){
 //         return {cancel: true}
 //     }
-    
-    
+
+
 // }
