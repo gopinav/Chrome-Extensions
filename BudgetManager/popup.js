@@ -1,7 +1,6 @@
 let timer_active = localStorage.getItem("timer_activated");
 let is_activated = document.getElementById("is_activated");
 let timer_button = document.querySelector(".start_timer");
-// stop_button = document.querySelector(".stop_timer")
 
 if (timer_active) {
     is_activated.textContent = timer_active;
@@ -48,4 +47,4 @@ function deactivate() {
 
 }
 
-window.setInterval(deactivate, 1000)
+window.setTimeout(deactivate, 1000);

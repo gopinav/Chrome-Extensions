@@ -38,33 +38,3 @@ function blocker(details) {
 
 chrome.webRequest.onBeforeRequest.addListener(
     blocker, filter, opt);
-
-// console.log("Loaded extension");
-
-// function blockRequest(details) {
-//     return {cancel: true};
-//   }
-
-// function get_param(){
-//     chrome.storage.sync.get(['is_running'], function(timer){
-//         initial = timer.is_running;
-//     });
-//     return initial;
-// }
-
-
-// function simple(){
-//     var initial = false;
-//     initial = get_param()
-//     chrome.storage.sync.get(['is_running'], function(timer){
-//         initial = "hello world";
-//         // initial = timer.is_running;
-//     });
-
-//     // alert(isTrueSet)
-//     if (initial){
-//         return {cancel: true}
-//     }
-
-
-// }
