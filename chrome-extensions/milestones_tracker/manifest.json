@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Milestones Tracker",
+  "version": "0.0.1",
+  "permissions": [
+    "storage"
+  ],
+  "description": "Prioritize your work and pick your milestones for today.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "tab-icon.png",
+    "default_title": "Focus on your priorities",
+    "default_popup": "popup.html"
+  }
+}
+

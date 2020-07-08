@@ -1,0 +1,190 @@
+html {
+    background: #4f4d48;
+    height: 400px;
+    width: 600px;
+    max-height: 400px;
+    max-width: 600px;
+}
+
+body {
+    background: #4f4d48;
+    height: 400px;
+    width: 600px;
+    max-height: 400px;
+    max-width: 600px;
+}
+
+/* Input bars */
+input[type=text],
+input[type=text]:focus {
+    color: #fff;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+/* Remove scrollbar but keep functionality */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Base class for centralized body */
+.container {
+    max-height: 400px;
+    max-width: 600px;
+}
+
+/* The individual items on the distraction list or the milestones tracker */
+.todos li {
+    background: #737373;
+}
+
+/* Adjust the cursor when hovering over the delete icon */
+.delete {
+    cursor: pointer;
+}
+
+/* The delete icon for the distraction list and the milestones tracker */
+.fa-trash-alt:hover {
+    color: red;
+}
+
+/* Special class to add on filtered out items during search */
+.filtered {
+    display: none !important;
+}
+
+/* The focus countdown timer */
+.clock {
+    font-size: 2em;
+    color: white;
+}
+
+/* The row and column classes for the two column layout */
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 30%;
+}
+
+/* The milestones tracker icon in the sidebar menu */
+.fa-bullseye {
+    color: #737373;
+}
+
+.fa-bullseye:hover {
+    color: white
+}
+
+/* The focus timer icon in the sidebar menu */
+.fa-clock {
+    color: #737373;
+}
+
+.fa-clock:hover {
+    color: white
+}
+
+/* The distraction list icon in the sidebar menu */
+.fa-list {
+    color: #737373;
+}
+
+.fa-list:hover {
+    color: white
+}
+
+/* The question mark icon in the sidebar menu */
+.fa-question {
+    color: #737373;
+}
+
+.fa-question:hover {
+    color: white
+}
+
+/* The play button for the timer */
+.fa-play {
+    color: white;
+    padding: 17px;
+    cursor: pointer;
+}
+
+.fa-play:hover {
+    color: green;
+}
+
+/* The stop button for the timer */
+.fa-stop {
+    color: white;
+    padding: 17px;
+    cursor: pointer;
+}
+
+.fa-stop:hover {
+    color: red;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 65px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #4a4844;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 65px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+li {
+    background: url("arrow.png") 0 50% no-repeat;
+    list-style-type: none;
+    font-size:20px;
+  }
+
+li .fa-clock {
+    color: white
+}
+li .fa-bullseye {
+    color: white
+}
+li .fa-list {
+    color: white
+}
+li .fa-question {
+    color: white
+}

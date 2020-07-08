@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Distraction List</title>
+</head>
+<style>.fa-list {
+    color: white
+}</style>
+<body>
+<div class="sidenav">
+    <a href="popup_timer.html"><i class="far fa-clock fa-lg"></i></a>
+    <a href="popup_milestones.html"><i class="fas fa-bullseye fa-lg"></i></a>
+    <a href="popup_distraction.html"><i class="fas fa-list fa-lg"></i></a>
+    <a href="support.html"><i class="fas fa-question fa-lg"></i></a>
+</div>
+<div class="main">
+    <div class="container">
+        <header class="text-center text-light my-4 mx-3">
+            <h1 class="mb-1">Distraction List</h1>
+            <span class="mb-1">Small trivial tasks can occupy your mind.
+                Write these down for later so you can focus on things that are important right now.</span>
+        </header>
+    </div>
+    <div class="row">
+        <div class="column ml-3">
+            <div class="container text-center">
+                <form class="add text-center">
+                    <input class="form-control m-auto" type="text" name="add"
+                           placeholder="Add a distraction..."/>
+                </form>
+            </div>
+        </div>
+        <div class="column mr-3">
+            <div class="container text-center">
+                <form class="search text-center">
+                    <input class="form-control m-auto" type="text" name="search"
+                           placeholder="Search distractions..."/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-4">
+        <ul class="list-group todos mx-auto text-light"></ul>
+    </div>
+</div>
+<script src="popup_distraction.js"></script>
+</body>
+</html>

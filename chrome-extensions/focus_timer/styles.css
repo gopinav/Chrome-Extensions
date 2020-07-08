@@ -1,0 +1,49 @@
+html {
+    background: #4f4d48;
+    height: 400px;
+    width: 600px;
+}
+
+body {
+    background: #4f4d48;
+    height: 400px;
+    width: 600px;
+}
+
+.container {
+    max-height: 400px;
+    max-width: 600px;
+}
+
+.clock {
+    font-size: 2em;
+    color: white;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 42%;
+}
+
+.fa-play {
+    color: white;
+    padding: 17px;
+    cursor: pointer;
+}
+
+.fa-play:hover {
+    color: green;
+}
+
+.fa-stop {
+    color: white;
+    padding: 17px;
+    cursor: pointer;
+}
+
+.fa-stop:hover {
+    color: red;
+}

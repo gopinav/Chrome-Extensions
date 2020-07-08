@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Distraction List",
+  "version": "0.0.1",
+  "permissions": [
+    "storage"
+  ],
+  "description": "Focus on what is important and put distracting little tasks on a list for later.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "tab-icon.png",
+    "default_title": "Put away distracting tasks",
+    "default_popup": "popup.html"
+  }
+}
+

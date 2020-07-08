@@ -1,0 +1,40 @@
+html {
+    background: #4f4d48;
+    height: 400px;
+    width: 600px;
+}
+
+body {
+    background: #4f4d48;
+    height: 400px;
+    width: 600px;
+}
+
+.container {
+    max-height: 400px;
+    max-width: 600px;
+}
+
+input[type=text],
+input[type=text]:focus {
+    color: #fff;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+.todos li {
+    background: #737373;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.fa-trash-alt:hover {
+    color: red;
+}
+
+.filtered {
+    display: none !important;
+}
