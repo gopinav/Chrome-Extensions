@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+    <title>Speak Out</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <style>
+        input{
+            display: none;
+        }
+        body{
+            width: 100px;
+        }
+        
+        p{
+            text-align: center;
+            justify-content: center;
+        }
+
+        #greet{
+            text-align: center;
+            justify-content: center;
+            border-bottom: 3px solid #1044ff;
+        }
+
+        #divbtn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #event-button{
+            margin: 0  auto;
+            background-color: #00ff85;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2 id="greet"> Speak Out </h2>
+    <p>Simply Highlight the text and Click on Listen.</p>
+
+    <div id="divbtn">
+        <button id="event-button" > Listen </button>
+    </div>
+    
+    
+    <div id="output"></div>
+
+   
+    <script src="popup.js"></script>
+   
+
+</body>
+</html>
